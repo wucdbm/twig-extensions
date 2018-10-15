@@ -1,0 +1,33 @@
+{
+    "name": "wucdbm/twig-extensions",
+    "type": "library",
+    "description": "A custom set of Twig Extensions",
+    "keywords": ["twig", "twig extension"],
+    "authors": [
+        {
+            "name": "Martin Kirilov",
+            "email": "wucdbm@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "twig/twig": "~2.0",
+        "symfony/property-access": "~3.0|~4.0",
+        "symfony/expression-language": "~3.0|~4.0",
+        "symfony/http-foundation": "~3.0|~4.0"
+    },
+    "require-dev": {
+        "wucdbm/php-cs-fixers": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": { "Wucdbm\\TwigExtensions\\": "src" }
+    },
+    "config": {
+        "bin-dir": "bin",
+        "platform": {
+            "php": "7.1.3"
+        }
+    },
+    "license": "MIT"
+}
