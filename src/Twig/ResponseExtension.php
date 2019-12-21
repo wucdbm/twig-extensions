@@ -3,9 +3,10 @@
 namespace Wucdbm\TwigExtensions\Twig;
 
 use Symfony\Component\HttpFoundation\Response;
+use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 
-class ResponseExtension extends \Twig_Extension {
+class ResponseExtension extends AbstractExtension {
 
     public function getFilters() {
         return [

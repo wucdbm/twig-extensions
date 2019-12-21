@@ -2,9 +2,10 @@
 
 namespace Wucdbm\TwigExtensions\Twig;
 
+use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 
-class ArrayExtension extends \Twig_Extension {
+class ArrayExtension extends AbstractExtension {
 
     public function getFilters() {
         return [
