@@ -25,9 +25,8 @@ class PhpExtension extends AbstractExtension {
 
         if ($fqcn) {
             $parts = explode('\\', $fqcn);
-            $short = array_pop($parts);
 
-            return $short;
+            return array_pop($parts);
         }
 
         return $default;

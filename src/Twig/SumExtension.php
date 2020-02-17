@@ -17,7 +17,7 @@ class SumExtension extends AbstractExtension {
     protected $accessor;
 
     public function __construct(?ExpressionLanguage $language) {
-        if (null === $language) {
+        if (!$language) {
             $language = new ExpressionLanguage();
         }
         $this->language = $language;
@@ -93,7 +93,7 @@ class SumExtension extends AbstractExtension {
         return array_unique($values, $sortType);
     }
 
-    public function count($arrayOrObject, $expression = null) {
+    public function count($arrayOrObject, $expression = null): int {
         $count = 0;
         foreach ($arrayOrObject as $value) {
             $shouldSum = true;

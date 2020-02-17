@@ -15,11 +15,7 @@ class ResponseExtension extends AbstractExtension {
     }
 
     public function responseStatus($code) {
-        if (isset(Response::$statusTexts[$code])) {
-            return Response::$statusTexts[$code];
-        }
-
-        return sprintf('Status Code %s', $code);
+        return Response::$statusTexts[$code] ?? sprintf('Status Code %s', $code);
     }
 
 }
